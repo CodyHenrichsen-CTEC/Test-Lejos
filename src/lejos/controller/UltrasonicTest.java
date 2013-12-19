@@ -20,10 +20,7 @@ public class UltrasonicTest
 		{
 			Motor.A.stop();
 			Motor.B.stop();
-			Motor.A.setSpeed(720);
-			Motor.B.setSpeed(720);
-			Motor.A.backward();
-			Motor.B.backward();
+			
 			try
 			{
 				Thread.sleep(200);
@@ -38,8 +35,8 @@ public class UltrasonicTest
 		{
 			Motor.B.flt();
 			Motor.A.flt();
-			Motor.A.setSpeed(720);
-			Motor.B.setSpeed(720);
+			Motor.A.setSpeed(2000);
+			Motor.B.setSpeed(2000);
 			Motor.A.forward();
 			Motor.B.forward();
 			try
